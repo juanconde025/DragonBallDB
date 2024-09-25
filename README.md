@@ -8,7 +8,7 @@ Este proyecto contiene una base de datos que almacena información relacionada c
 | 1 | [Requerimientos](#requerimientos) |
 | 2 | [Tablas](#tablas) |
 | 3 | [Estructuracion](#estructuración) |
-| 4 | [Cosultas SQL](#consultas) |
+| 4 | [Cosultas SQL](#consultas-sql) |
 
 
 ## Requerimientos
@@ -34,7 +34,7 @@ Las siguientes tablas están definidas en la base de datos:
 📐
 Se maquetó en primera instancia el diagrama conceptual entidad-relación de cada una de las 10 entidades principales y sus relaciones correspondientes
 
-![conceptual](Diagramas\DiagramaConceptual.png)
+![conceptual](Diagramas/DiagramaConceptual.png)
 
 ### Relaciones:
 
@@ -52,7 +52,7 @@ Se maquetó en primera instancia el diagrama conceptual entidad-relación de cad
 
 Posteriormente se realizó la estructuración de las tablas con estas relaciones en el diagrama lógico UML E-R
 
-![logico](Diagramas\ERDBDB.jpg)
+![logico](Diagramas/ERDBDB.jpg)
 
 ## Consultas SQL
 🔎
