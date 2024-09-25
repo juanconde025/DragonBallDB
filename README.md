@@ -1,13 +1,22 @@
-# Base de Datos de Dragon Ball Z
+# Base de Datos de Dragon Ball  🐉
 
 Este proyecto contiene una base de datos que almacena información relacionada con personajes, combates, objetos, organizaciones, películas, planetas, razas, sagas, transformaciones y técnicas de la serie Dragon Ball.
 
-## Requerimientos
+## Tabla de contenidos 📋
+| Indice | Titulo  |
+|--|--|
+| 1 | [Requerimientos](#requerimientos) |
+| 2 | [Tablas](#tablas) |
+| 3 | [Estructuracion](#estructuración) |
+| 4 | [Cosultas SQL](#consultas) |
 
-- MySQL o cualquier base de datos compatible con SQL.
+
+## Requerimientos
+🛠️
+MySQL o cualquier base de datos compatible con SQL.
 
 ## Tablas
-
+📆
 Las siguientes tablas están definidas en la base de datos:
 
 1. `combates`
@@ -21,8 +30,32 @@ Las siguientes tablas están definidas en la base de datos:
 9. `transformaciones`
 10. `técnicas`
 
-## Consultas SQL
+## Estructuración
+📐
+Se maquetó en primera instancia el diagrama conceptual entidad-relación de cada una de las 10 entidades principales y sus relaciones correspondientes
 
+![conceptual](Diagramas\DiagramaConceptual.png)
+
+### Relaciones:
+
+1. `personajes` y `combates` -> N:M
+2. `personajes` y `planetas` -> 1:N
+3. `personajes` y `películas` -> N:M 
+4. `personajes` y `sagas` -> N:M
+5. `sagas` y `películas` -> N:M
+6. `objetos` y `sagas` -> N:M
+7. `personajes` y `organizaciones` -> 1:N
+8. `personajes` y `transformaciones` -> N:M
+9. `personajes` y `raza` -> 1:N
+10. `raza` y `transformaciones` -> 1:N
+11. `personajes` y `técnicas` -> N:M
+
+Posteriormente se realizó la estructuración de las tablas con estas relaciones en el diagrama lógico UML E-R
+
+![logico](Diagramas\ERDBDB.jpg)
+
+## Consultas SQL
+🔎
 A continuación se mostrarán consultas SQL con los resultados de cada consulta.
 
 
